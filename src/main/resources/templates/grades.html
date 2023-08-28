@@ -6,8 +6,8 @@
     </head>
     <body>
         <div class="topnav">
-            <a href="http://localhost:8080">Form</a>
-            <a href="http://localhost:8080/grades">Grades</a>
+            <a th:href="@{/}">Form</a>
+            <a th:href="@{/grades}">Grades</a>
         </div>
 
         <div class="container">
@@ -26,7 +26,7 @@
                         <a
                             role="button"
                             class="update"
-                            th:href="@{/(name = ${grade.name})}"
+                            th:href="@{/(id = ${grade.id})}"
                             >Update</a
                         >
                     </td>
